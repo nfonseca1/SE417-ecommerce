@@ -1,0 +1,34 @@
+.search-form {
+	text-align: center;
+}
+
+.products-section {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.product-listing {
+	display: inline-flex;
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 40vw;
+	height: 10vw;
+}
+
+.listing-details {
+	display: inline-block;
+	padding: 0 5%;
+	width: 100%;
+}
+
+.listing-img {
+	display: inline-block;
+	height: 100%;
+}
+
+.listing-img img {
+	height: 100%;
+	width: auto;
+}

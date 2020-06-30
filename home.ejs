@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Horizon</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<div class="search-form">
+	<h1>Search For Items</h1>
+	<form action="/buy" method="POST">
+	<input type="text" placeholder="Ex: Laptop" name="search">
+	<button>Search</button>
+	</form>
+</div>
+
+<br>
+
+<div class="products-section">
+<% products.forEach(product => { %>
+	<div class="product-listing">
+		<div class="listing-img">
+			<img src="<%= product.ImageURL %>" />
+		</div>
+		<div class="listing-details">
+			<h4><%= product.Name %></h4>
+			<p><%= product.Category %> - <%= product.Seller %></p>
+		</div>
+	</div>
+<% }) %>
+</div>
+</body>
+</html>

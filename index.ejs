@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Horizon</title>
+</head>
+<body>
+
+<h1>Horizon</h1>
+<br>
+<h2>Login</h2>
+<p><%= loginError %></p>
+<form action="/home" method="POST">
+	<label>Email</label>
+	<input type="email" name="email" required>
+	<label>Password</label>
+	<input type="password" name="password" required>
+	<br>
+	<button>Login</button>
+</form>
+
+<br><br>
+
+<h2>Create An Account - Sell Your Own Items</h2>
+<p><%= registerError %></p>
+<form action="/" method="POST">
+	<label>Email</label>
+	<input type="email" name="email" required>
+	<label>Username</label>
+	<input type="text" name="username" required>
+	<br>
+	<label>First Name</label>
+	<input type="text" name="firstname">
+	<label>Last Name</label>
+	<input type="text" name="lastname">
+	<br>
+	<label>Password</label>
+	<input type="password" name="password" required>
+	<label>Confirm Password</label>
+	<input type="password" name="confirmPass" required>
+	<br>
+	<button>Register</button>
+</form>
+</body>
+</html>
